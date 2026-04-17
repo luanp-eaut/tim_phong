@@ -31,5 +31,5 @@ python main.py
     * Nhập `*` để chọn tất cả các ca trong ngày.
     * Nhập `0` nếu không muốn kiểm tra ngày đó.
 
-## 📊 Kết quả
+## Kết quả
 Sau khi hoàn thành, file **`result.xlsx`** sẽ được tạo ra tại thư mục data, liệt kê danh sách các phòng thỏa mãn điều kiện kèm theo chi tiết các ca trống.
