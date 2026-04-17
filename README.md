@@ -5,7 +5,7 @@
 Để ứng dụng chạy chính xác, hãy thực hiện đúng các bước sau:
 
 1.  **Tải dữ liệu:** Tải file thông tin lịch học từ qldt về máy dưới dạng file **.csv**.
-2.  **Chuyển đổi định dạng:** Mở file .csv và lưu lại (Save As) sang định dạng **.xlsx**. Đặt tên file là `lich_hoc.xlsx`. (Mở trực tiếp từ excel thì hơi phức tạp, phải dùng Get Data, tốt nhất là upload lên google drive, ở bằng google sheet rồi tải về dạng .xslx).
+2.  **Chuyển đổi định dạng:** Mở file .csv và lưu lại (Save As) sang định dạng **.xlsx**. Đặt tên file là `lich_hoc.xlsx`. (Mở trực tiếp từ excel thì hơi phức tạp, phải dùng Get Data, tốt nhất là upload lên google drive, mở bằng google sheet rồi tải về dạng .xslx).
 3.  **Làm sạch dữ liệu:**
     * **Xoá các dòng trống hoặc dòng tiêu đề phụ** ở đầu file để cho dòng chứa tiêu đề cột (Phòng học, T2, T3...) là dòng đầu tiên.
     * **Đổi tên các cột** ngày trong tuần thành đúng định dạng: `T2`, `T3`, `T4`, `T5`, `T6`, `T7`, `CN`.
