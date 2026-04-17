@@ -52,7 +52,7 @@ def main():
 
     # 3. Thu thập yêu cầu
     user_requests = {}
-    print("\nNhập các ca cần kiểm tra (Chỉ cần trống 1 trong các ca này là được):")
+    print("\nNhập các ca cần kiểm tra:")
     for d in days_list:
         user_requests[d] = get_user_input(d)
 
