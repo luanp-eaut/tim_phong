@@ -32,13 +32,13 @@ def get_actual_columns(df):
 def get_user_requirements():
     """Thu thập yêu cầu về sức chứa và ca học từ người dùng"""
     try:
-        min_cap = int(input("Sức chứa tối thiểu: "))
+        min_cap = int(input("\nSức chứa tối thiểu: "))
     except ValueError:
         print("Sức chứa phải là số nguyên.")
         return None, None
 
     user_requests = {}
-    print("\nNhập các ca cần kiểm tra (*: tất cả, 0: bỏ qua, hoặc liệt kê ca 1 2...):")
+    print("Nhập các ca cần kiểm tra (*: tất cả, 0: bỏ qua, hoặc liệt kê ca 1 2...):")
     for d in DAYS_LIST:
         user_requests[d] = get_slots(d)
     
@@ -47,7 +47,7 @@ def get_user_requirements():
 def get_slots(day_name):
     """Hàm nội bộ để xử lý nhập liệu cho từng ngày"""
     while True:
-        choice = input(f"{day_name}: ").strip()
+        choice = input(f" - {day_name}: ").strip()
         if choice == '*': return list(SLOTS_TIME.keys())
         if choice == '0': return []
         try:
