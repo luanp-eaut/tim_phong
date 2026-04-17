@@ -25,7 +25,7 @@ python app.py
 
 Ứng dụng sẽ yêu cầu nhập thông tin qua các bước:
 
-1.  **Sức chứa tối thiểu:** Nhập số ghế bạn cần (ví dụ: `50`).
+1.  **Sức chứa tối thiểu:** Nhập sức chứa tối thiểu (ví dụ: `50`).
 2.  **Chọn ca học (T2 -> CN):**
     * Nhập danh sách ca (ví dụ: `1 2 5`).
     * Nhập `*` để chọn tất cả các ca trong ngày.
