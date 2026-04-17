@@ -37,12 +37,12 @@ def get_user_requirements():
         print("Sức chứa phải là số nguyên.")
         return None, None
 
-    user_requests = {}
+    shifts = {}
     print("Nhập các ca cần kiểm tra (*: tất cả, 0: bỏ qua, hoặc liệt kê ca 1 2...):")
     for d in DAYS_LIST:
-        user_requests[d] = get_slots(d)
+        shifts[d] = get_slots(d)
     
-    return min_cap, user_requests
+    return min_cap, shifts
 
 def get_slots(day_name):
     """Hàm nội bộ để xử lý nhập liệu cho từng ngày"""
@@ -55,7 +55,7 @@ def get_slots(day_name):
         except ValueError:
             print("Vui lòng nhập số cách nhau bằng khoảng trắng.")
 
-def find_available_rooms(df, min_capacity, user_requests, actual_columns):
+def find_available_rooms(df, min_capacity, shifts, actual_columns):
     """Lọc các phòng thỏa mãn điều kiện"""
     results = []
 
@@ -67,7 +67,7 @@ def find_available_rooms(df, min_capacity, user_requests, actual_columns):
             continue
 
         matching_details = []
-        for d, requested_slots in user_requests.items():
+        for d, requested_slots in shifts.items():
             if not requested_slots: 
                 continue
                 
@@ -95,11 +95,11 @@ def main():
     df = load_data(input_file)
     if df is None: return
 
-    min_capacity, user_requests = get_user_requirements()
+    min_capacity, shifts = get_user_requirements()
     if min_capacity is None: return
 
     actual_columns = get_actual_columns(df)
-    results = find_available_rooms(df, min_capacity, user_requests, actual_columns)
+    results = find_available_rooms(df, min_capacity, shifts, actual_columns)
 
     if results:
         pd.DataFrame(results).to_excel(output_file, index=False)
