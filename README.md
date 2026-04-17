@@ -1,4 +1,4 @@
-# Công cụ tìm phòng học yrống tại EAUT
+# Công cụ tìm phòng học trống tại EAUT
 
 ## Cài đặt & Chuẩn bị dữ liệu
 
