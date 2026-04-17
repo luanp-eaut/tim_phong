@@ -20,7 +20,7 @@
 
 Mở Terminal/Command Prompt tại thư mục dự án và chạy lệnh:
 ```bash
-python main.py
+python app.py
 ```
 
 Ứng dụng sẽ yêu cầu nhập thông tin qua các bước:
